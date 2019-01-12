@@ -45,6 +45,8 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             "C6","C#6","Db6","D6","D#6","Eb6","E6","F6","F#6","Gb6","G6","G#6","Ab6","A6","A#6","Bb6","B6"};
     final String[] CNS_CODEm6 = {
             "Cm6","C#m6","Dbm6","Dm6","D#m6","Ebm6","Em6","Fm6","F#m6","Gbm6","Gm6","G#m6","Abm6","Am6","A#m6","Bbm6","Bm6"};
+//    final String FONTCOLOR_S = "&lt;font color=\\\"red\\\"&gt;";
+//    final String FONTCOLOR_E = "&lt;/font&gt;";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -306,7 +308,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODE7){
                 if(words[i].equals(code)){
                     String triad = "7";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -314,7 +316,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEm){
                 if(words[i].equals(code)){
                     String triad = "m";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -322,7 +324,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEm7){
                 if(words[i].equals(code)){
                     String triad = "m7";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -330,7 +332,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEM7){
                 if(words[i].equals(code)){
                     String triad = "M7";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -338,7 +340,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEmM7){
                 if(words[i].equals(code)){
                     String triad = "mM7";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -346,7 +348,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEs4){
                 if(words[i].equals(code)){
                     String triad = "sus4";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -354,7 +356,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEdim){
                 if(words[i].equals(code)){
                     String triad = "dim";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -362,7 +364,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEm75){
                 if(words[i].equals(code)){
                     String triad = "m7-5";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -370,7 +372,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEag){
                 if(words[i].equals(code)){
                     String triad = "aug";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -378,7 +380,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEad9){
                 if(words[i].equals(code)){
                     String triad = "add9";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -386,7 +388,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODE6){
                 if(words[i].equals(code)){
                     String triad = "6";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }
@@ -394,7 +396,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODEm6){
                 if(words[i].equals(code)){
                     String triad = "m6";
-                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
+                    wkLyrics += toneDown(code.replace(triad, "")) + triad + " ";
                     matchflag = 1;
                 }
             }

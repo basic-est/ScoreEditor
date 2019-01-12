@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SplashActivity" />
         <activity android:name=".ScoreBrowseActivity" />
         <activity android:name=".ScoreEditActivity" />
         <activity android:name=".DiagramEditActivity" />
         <activity android:name=".ExportActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" />
         <activity android:name=".LibraryFragment" />
         <activity android:name=".DiagramFragment" />
 
