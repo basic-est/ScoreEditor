@@ -184,7 +184,19 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             }
             if(matchflag == 0) wkLyrics += words[i]+ " ";
         }
+
        tvLyrics.setText(wkLyrics);
+        for(int i = 0; i < words.length; i++) {
+            matchflag = 0;
+            for(String code:CNS_CODE7){
+                if(words[i].equals(code)){
+                    wkLyrics += toneUp(code) + "7" + " ";
+                    matchflag = 1;
+                }
+            }
+            if(matchflag == 0) wkLyrics += words[i]+ " ";
+        }
+        tvLyrics.setText(wkLyrics);
     }
 
     public void onToneDownBtn(View view) {
@@ -199,6 +211,18 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             for(String code:CNS_CODE){
                 if(words[i].equals(code)){
                     wkLyrics += toneDown(code) + " ";
+                    matchflag = 1;
+                }
+            }
+            if(matchflag == 0) wkLyrics += words[i]+ " ";
+        }
+
+        tvLyrics.setText(wkLyrics);
+        for(int i = 0; i < words.length; i++) {
+            matchflag = 0;
+            for(String code:CNS_CODE7){
+                if(words[i].equals(code)){
+                    wkLyrics += toneDown(code) + "7" + " ";
                     matchflag = 1;
                 }
             }
