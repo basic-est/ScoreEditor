@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Score Editor - Lyrics &amp; Guitar code -</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_library">Library</string>
+    <string name="title_diagram">Diagram</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_version">V 1.0</string>
+    <string name="copyright">Copyright © Nexus corporation. All Rights Reserved.</string>
+    <string name="app_shortname">Score Editor</string>
+    <string name="title_export">Export</string>
+    <string name="tlber_scoretitle">チェリー(dummy)</string>
+    <string name="code_name">コード名</string>
+    <string name="code_name_hint">コード名を入力</string>
+    <string name="diagram_edit">ダイアグラム</string>
+    <string name="mark1">　</string>
+    <string name="mark2">　</string>
+    <string name="mark3">　</string>
+    <string name="mark4">　</string>
+    <string name="mark5">　</string>
+    <string name="mark6">　</string>
+    <string name="Barre_switch">バレーコード入力モード</string>
+    <string name="menu_btn">︙</string>
+    <string name="menu_edit">編集</string>
+    <string name="menu_copy">コピーして編集</string>
+    <string name="menu_del">削除</string>
+    <string name="menu_export">エクスポート</string>
+    <string name="dialog_title">確認</string>
+    <string name="dialog_msg">作成中のスコアを破棄しますか？</string>
+    <string name="dialog_btn_ok">破棄</string>
+    <string name="dialog_btn_ng">編集に戻る</string>
+    <string name="dialog_ok_toast">スコアを破棄しました。</string>
+    <string name="dialog_ng_toast">保存するには右上のボタンをタップします。</string>
+    <string-array name="lv_liblist">
+        <item>チェリー(dummy)</item>
+        <item>空も飛べるはず(dummy)</item>
+    </string-array>
+    <string-array name="lv_diagramlist">
+        <item>Cm(dummy)</item>
+        <item>BM7(dummy)</item>
+        <item>F♯(dummy)</item>
+        <item>B♭(dummy)</item>
+    </string-array>
+    <string name="exportInfo_hint">備考を入力</string>
+    <string name="TITLE_HINT">タイトルを入力</string>
+    <string name="LYRICS_HINT">歌詞・コードを入力</string>
+</resources>

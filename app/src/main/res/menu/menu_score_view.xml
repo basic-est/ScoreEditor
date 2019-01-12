@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.androidmenutest.app.ScoreViewActivity" >
+
+    <item
+        android:id="@+id/edit"
+        android:title="@string/menu_edit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/copy"
+        android:title="@string/menu_copy"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/del"
+        android:title="@string/menu_del"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/export"
+        android:title="@string/menu_export"
+        android:orderInCategory="400"
+        app:showAsAction="never" />
+
+</menu>
+
