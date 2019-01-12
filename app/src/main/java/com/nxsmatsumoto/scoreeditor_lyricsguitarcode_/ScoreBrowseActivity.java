@@ -176,27 +176,26 @@ public class ScoreBrowseActivity extends AppCompatActivity {
         int matchflag = 0;
         for(int i = 0; i < words.length; i++) {
             matchflag = 0;
+
             for(String code:CNS_CODE){
                 if(words[i].equals(code)){
                     wkLyrics += toneUp(code) + " ";
                     matchflag = 1;
                 }
             }
+
+            for(String code:CNS_CODE7){
+                if(words[i].equals(code)){
+                    String triad = "7";
+                    wkLyrics += toneUp(code.replace(triad, "")) + triad + " ";
+                    matchflag = 1;
+                }
+            }
+
             if(matchflag == 0) wkLyrics += words[i]+ " ";
         }
 
        tvLyrics.setText(wkLyrics);
-        for(int i = 0; i < words.length; i++) {
-            matchflag = 0;
-            for(String code:CNS_CODE7){
-                if(words[i].equals(code)){
-                    wkLyrics += toneUp(code) + "7" + " ";
-                    matchflag = 1;
-                }
-            }
-            if(matchflag == 0) wkLyrics += words[i]+ " ";
-        }
-        tvLyrics.setText(wkLyrics);
     }
 
     public void onToneDownBtn(View view) {
@@ -208,27 +207,28 @@ public class ScoreBrowseActivity extends AppCompatActivity {
         int matchflag = 0;
         for(int i = 0; i < words.length; i++) {
             matchflag = 0;
+
             for(String code:CNS_CODE){
                 if(words[i].equals(code)){
                     wkLyrics += toneDown(code) + " ";
                     matchflag = 1;
                 }
             }
-            if(matchflag == 0) wkLyrics += words[i]+ " ";
-        }
 
-        tvLyrics.setText(wkLyrics);
-        for(int i = 0; i < words.length; i++) {
-            matchflag = 0;
             for(String code:CNS_CODE7){
                 if(words[i].equals(code)){
-                    wkLyrics += toneDown(code) + "7" + " ";
+                    String triad = "7";
+                    wkLyrics += toneDown(code.replace(triad, "")) + "7" + " ";
                     matchflag = 1;
                 }
             }
+
             if(matchflag == 0) wkLyrics += words[i]+ " ";
+
         }
+
         tvLyrics.setText(wkLyrics);
+
     }
 
     public String toneUp(String code) {
