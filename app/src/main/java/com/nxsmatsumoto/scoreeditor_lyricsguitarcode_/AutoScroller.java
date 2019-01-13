@@ -6,7 +6,7 @@ import android.widget.ScrollView;
 public class AutoScroller {
 
     private static final int DEFAULT_SCROLL_BY = 1;
-    private static final int DURATION = 100;
+    private static final int DURATION = 1;
 
     private final ScrollView scrollView;
     private final int scrollBy;

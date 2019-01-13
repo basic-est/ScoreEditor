@@ -497,15 +497,16 @@ public class ScoreBrowseActivity extends AppCompatActivity {
     public void onScroll(View view) {
         //TODO: 自動スクロール機能
         ScrollView scrollLyrics = findViewById(R.id.scrollLyrics);
-        AutoScroller autoScroller = new AutoScroller(scrollLyrics);
         String msg = "";
         if (scroll) {
             scroll = false;
             msg = "自動スクロール：オフ";
+            AutoScroller autoScroller = new AutoScroller(scrollLyrics,0);
             autoScroller.stop();
         } else {
             scroll = true;
             msg = "自動スクロール：オン";
+            AutoScroller autoScroller = new AutoScroller(scrollLyrics,1);
             autoScroller.start();
         }
         Toast.makeText(getApplicationContext(), msg ,Toast.LENGTH_SHORT).show();
