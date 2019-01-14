@@ -35,6 +35,9 @@ public class DiagramEditActivity extends AppCompatActivity {
             _diagramId = intent.getLongExtra("diagramID", 0);
         }
 
+        UnderDevelopmentDialogFragment dialogFragment = new UnderDevelopmentDialogFragment();
+        dialogFragment.show(getSupportFragmentManager(), "UnderDevelopmentDialogFragment");
+
     }
 
     @Override

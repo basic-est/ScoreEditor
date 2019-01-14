@@ -19,6 +19,10 @@ public class ExportActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        UnderDevelopmentDialogFragment dialogFragment = new UnderDevelopmentDialogFragment();
+        dialogFragment.show(getSupportFragmentManager(), "UnderDevelopmentDialogFragment");
+
     }
 
     @Override

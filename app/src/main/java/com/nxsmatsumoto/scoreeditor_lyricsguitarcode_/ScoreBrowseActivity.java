@@ -91,6 +91,7 @@ public class ScoreBrowseActivity extends AppCompatActivity {
             db.close();
         }
 
+        // TODO: コードの色付け処理
     }
 
     public void onBkScoreView(View view) {
@@ -498,15 +499,14 @@ public class ScoreBrowseActivity extends AppCompatActivity {
         //TODO: 自動スクロール機能
         ScrollView scrollLyrics = findViewById(R.id.scrollLyrics);
         String msg = "";
+        AutoScroller autoScroller = new AutoScroller(scrollLyrics,0);
         if (scroll) {
             scroll = false;
             msg = "自動スクロール：オフ";
-            AutoScroller autoScroller = new AutoScroller(scrollLyrics,0);
             autoScroller.stop();
         } else {
             scroll = true;
             msg = "自動スクロール：オン";
-            AutoScroller autoScroller = new AutoScroller(scrollLyrics,1);
             autoScroller.start();
         }
         Toast.makeText(getApplicationContext(), msg ,Toast.LENGTH_SHORT).show();

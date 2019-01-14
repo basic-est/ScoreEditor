@@ -9,7 +9,7 @@ public class AutoScroller {
     private static final int DURATION = 1;
 
     private final ScrollView scrollView;
-    private final int scrollBy;
+    private int scrollBy;
 
     public AutoScroller(ScrollView scrollView) {
         this(scrollView, DEFAULT_SCROLL_BY);

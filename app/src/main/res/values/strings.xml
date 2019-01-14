@@ -31,6 +31,9 @@
     <string name="dialog_btn_ng">編集に戻る</string>
     <string name="dialog_ok_toast">スコアを破棄しました。</string>
     <string name="dialog_ng_toast">保存するには右上のボタンをタップします。</string>
+    <string name="dialog_title_UnderDev">この機能は開発中です</string>
+    <string name="dialog_msg_UnderDev">申し訳ありません。このバージョンではこの機能を利用することができません。</string>
+    <string name="dialog_btn__UnderDev">戻る</string>
     <string-array name="lv_liblist">
         <item>チェリー(dummy)</item>
         <item>空も飛べるはず(dummy)</item>
