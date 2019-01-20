@@ -21,7 +21,9 @@
         </activity>
         <activity android:name=".SplashActivity" />
         <activity android:name=".ScoreBrowseActivity" />
-        <activity android:name=".ScoreEditActivity" />
+        <activity
+            android:name=".ScoreEditActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".DiagramEditActivity" />
         <activity android:name=".ExportActivity" />
         <activity android:name=".LibraryFragment" />

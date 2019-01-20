@@ -94,7 +94,7 @@
                 android:clickable="true"
                 android:onClick="onToneUpBtn"
                 android:src="@drawable/sharp"
-                app:layout_constraintEnd_toStartOf="@+id/toneDownBtn"
+                app:layout_constraintEnd_toStartOf="@+id/ScrollBtn"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
@@ -102,12 +102,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="8dp"
                 android:background="@android:color/transparent"
                 android:clickable="true"
                 android:onClick="onToneDownBtn"
                 android:src="@drawable/b"
-                app:layout_constraintEnd_toStartOf="@+id/ScrollBtn"
+                app:layout_constraintEnd_toStartOf="@+id/toneUpBtn"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton

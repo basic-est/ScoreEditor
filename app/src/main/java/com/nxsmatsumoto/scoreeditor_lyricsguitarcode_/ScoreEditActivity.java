@@ -145,4 +145,26 @@ public class ScoreEditActivity extends AppCompatActivity {
         return result;
     }
 
+    public void onToneUpBtn(View view) {
+        EditText etLyrics = findViewById(R.id.scoreEditLyrics);
+        String lyrics = etLyrics.getText().toString();
+        CodeTransposer ct = new CodeTransposer();
+
+        String wkLyrics = ct.toneChange(lyrics,1);
+
+        etLyrics.setText(wkLyrics);
+    }
+
+    public void onToneDownBtn(View view) {
+        EditText etLyrics = findViewById(R.id.scoreEditLyrics);
+        String lyrics = etLyrics.getText().toString();
+        CodeTransposer ct = new CodeTransposer();
+
+        String wkLyrics = ct.toneChange(lyrics,-1);
+
+        etLyrics.setText(wkLyrics);
+    }
+
+
+
 }
