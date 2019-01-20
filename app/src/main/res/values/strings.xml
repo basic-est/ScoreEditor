@@ -5,7 +5,7 @@
     <string name="title_diagram">ダイアグラム</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="app_version">V 1.0</string>
+    <string name="app_version">V 1.0.1</string>
     <string name="copyright">Copyright © Nexus corporation. All Rights Reserved.</string>
     <string name="app_shortname">Score Editor</string>
     <string name="title_export">Export</string>
