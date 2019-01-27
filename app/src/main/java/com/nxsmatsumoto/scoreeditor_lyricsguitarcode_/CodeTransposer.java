@@ -16,6 +16,8 @@ public class CodeTransposer {
             "CmM7","C#mM7","DbmM7","DmM7","D#mM7","EbmM7","EmM7","FmM7","F#mM7","GbmM7","GmM7","G#mM7","AbmM7","AmM7","A#mM7","BbmM7","BmM7"};
     final String[] CODE_sus4 = {
             "Csus4","C#sus4","Dbsus4","Dsus4","D#sus4","Ebsus4","Esus4","Fsus4","F#sus4","Gbsus4","Gsus4","G#sus4","Absus4","Asus4","A#sus4","Bbsus4","Bsus4"};
+    final String[] CODE_7sus4 = {
+            "C7sus4","C#7sus4","Db7sus4","D7sus4","D#7sus4","Eb7sus4","E7sus4","F7sus4","F#7sus4","Gb7sus4","G7sus4","G#7sus4","Ab7sus4","A7sus4","A#7sus4","Bb7sus4","B7sus4"};
     final String[] CODE_dim = {
             "Cdim","C#dim","Dbdim","Ddim","D#dim","Ebdim","Edim","Fdim","F#dim","Gbdim","Gdim","G#dim","Abdim","Adim","A#dim","Bbdim","Bdim"};
     final String[] CODE_m7_5 = {
@@ -87,6 +89,14 @@ public class CodeTransposer {
             for(String code:CODE_sus4){
                 if(words[i].equals(code)){
                     String triad = "sus4";
+                    wkLyrics += keyChange(code.replace(triad, ""),value) + triad + " ";
+                    matchflag = 1;
+                }
+            }
+
+            for(String code:CODE_7sus4){
+                if(words[i].equals(code)){
+                    String triad = "7sus4";
                     wkLyrics += keyChange(code.replace(triad, ""),value) + triad + " ";
                     matchflag = 1;
                 }
