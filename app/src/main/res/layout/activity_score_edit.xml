@@ -36,6 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:ems="10"
+        android:fontFamily="monospace"
         android:gravity="top|left"
         android:hint="@string/LYRICS_HINT"
         android:inputType="textMultiLine"

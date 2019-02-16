@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ScoreBrowseActivity">
 
-    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_score_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,6 +64,7 @@
             android:id="@+id/scoreViewLyrics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
