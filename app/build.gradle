@@ -6,8 +6,8 @@ android {
         applicationId "com.nxsmatsumoto.scoreeditor_lyricsguitarcode_"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 3
-        versionName "0.0.1"
+        versionCode 4
+        versionName "0.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
